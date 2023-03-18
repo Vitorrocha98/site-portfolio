@@ -1,6 +1,11 @@
 /* import para fontes de texto*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1a1d22;
     margin: 0;
@@ -137,7 +142,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     background-color: #121212;
     padding: 30px;
     color: #fff;
@@ -174,4 +179,27 @@ footer {
 
 @media all and (max-width: 900px) {
     #nav-menu, .btnContato{display:none;}
+
+    .footer-container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    footer .logo {
+        padding: 1rem 0rem;
+    }
+
+    .content-footer {
+        border-left: 0;
+        border-top: 2px solid #1a1d22;
+        padding: 0;
+    }
+
+    .content-footer h3 {
+        margin-top: 1rem;
+    }
+
+    .content-footer li {margin-bottom: 10px;}
+
+    .footer-social img {margin-right: 30px;}
 }
