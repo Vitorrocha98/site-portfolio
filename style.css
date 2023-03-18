@@ -126,6 +126,40 @@ body {
     filter: none;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #121212;
+    padding: 30px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content-footer {
+    padding: 0 5rem 0 2rem;
+    border-left: 2px solid #1a1d22;
+}
+
+.content-footer ul {list-style: none;padding-left: 0;}
+
+.content-footer li {margin-bottom: 3px;}
+
+.content-footer a {
+    color: #fff;
+    text-decoration: none;    
+}
+.content-footer a:hover {
+    text-decoration: underline;    
+}
+
+.content-footer h3 {margin: 0;}
+
+.content-footer img {
+    width: 16px;
+    margin-right: 5px;  
+}
+
 @media all and (max-width: 900px) {
     #nav-menu, .btnContato{display:none;}
 }
