@@ -42,7 +42,6 @@ body {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     position: relative;
-    /*padding: 0 2rem;*/
 }
 
 #nav-menu a:before {
@@ -90,7 +89,7 @@ body {
 
 .btnContato button:hover {
     cursor: pointer;
-    background-color: #97d8db;
+    background-color: #b8eff1;
 }
 
 .banner-container img {
@@ -126,6 +125,15 @@ body {
     filter: none;
 }
 
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    border-top: 1px solid #333;
+    z-index: 2;
+}
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -153,12 +161,16 @@ body {
     text-decoration: underline;    
 }
 
-.content-footer h3 {margin: 0;}
+.content-footer h3 {margin: 0;font-weight: 500;}
 
 .content-footer img {
     width: 16px;
     margin-right: 5px;  
 }
+
+.footer-social ul {display: flex;}
+
+.footer-social img {width: auto; margin-right: 20px;}
 
 @media all and (max-width: 900px) {
     #nav-menu, .btnContato{display:none;}
