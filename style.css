@@ -125,16 +125,91 @@ body {
     letter-spacing: 0.15rem;
 }
 
+[alt="Imagem do desktop e mobile"] {
+    height: 40rem;
+}
+
 .img-apresentacao img {
     width: 23rem;
     filter: none;
 }
 
+.about,.experience,.contact {
+    width: 100%;
+    height: 30rem;
+    padding: 3rem 6rem;
+}
+
+.about-conteiner, .experience-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    padding-right: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img img,.experience-img img {
+    width: 25rem;
+    border: 3px solid #09BBC3;
+}
+
+.about-content {
+    padding-left: 2rem;
+    padding-right: 10%;
+    width: 50%;
+}
+
+.about-content span {
+    color: #09BBC3;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-title h3 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.about-description {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+.about-button.btnContato {
+    padding: 10px 0;
+}
+
+.about-button.btnContato button{
+    padding: 10px 0;
+    padding: 0.7rem 1.2rem;
+}
+
+.experience {
+    background-color: #111111;
+}
+
+.experience,.contact {display: none;}
+
+
+
+
+
+
+
+
 footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    position: fixed;
+    position: relative;
     border-top: 1px solid #333;
     z-index: 2;
 }
