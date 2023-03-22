@@ -28,10 +28,13 @@
                             <li>
                                 <a href="#experience-target">Experiência</a>
                             </li>
+                            <li>
+                                <a href="#projects-target">Projetos</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="btnContato">
-                        <button>Contato</button>
+                        <a href="#contact-target">Contato</a>
                     </div>
                 </div>
             </div>
@@ -61,62 +64,69 @@
                         <div class="about-content">
                             <span>Sobre mim</span>
                             <div class="about-title">
-                                <h3>Titulo do sobre mim</h3>
+                                <h2>Titulo do sobre mim</h2>
                             </div>
                             <span>Front-end developer</span>
                             <div class="about-description">
                                 <p>texto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto textotexto texto texto texto.</p>
                             </div>
                             <div class="about-button btnContato">
-                                <button>Contato</button>
+                                <a href="#contact-target">Contato</a>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
             <section>
                 <div class="experience" id="experience-target">
                     <div class="experience-conteiner">
-                        <div class="experience-img">
-                            <img src="/assets/desenvolvedor.png" alt="Imagem de um desenvolvedor">
+                        <div class="title">
+                            <span>Carreira</span>
+                            <h2>Experiência</h2>
                         </div>
-                        <div class="experience-content">
-                            <span>Sobre mim</span>
-                            <div class="experience-title">
-                                <h3>Titulo do sobre mim</h3>
-                            </div>
-                            <span>Front-end developer</span>
-                            <div class="experience-description">
-                                <p>texto texto texto texto texto texto texto textotexto texto texto textotexto texto texto textotexto texto texto texto.</p>
-                            </div>
-                            <div class="experience-button btnContato">
-                                <button>Contato</button>
-                            </div>
+                        <div class="experience-content">                            
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section>
+                <div class="projects" id="projects-target">
+                    <div class="projects-conteiner">
+                        <div class="title">
+                            <span>Meus</span>
+                            <h2>Projetos</h2>
+                        </div>
+                        <div class="projects-content">                            
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <div class="contact" id="contact-target">
                     <div class="contact-conteiner">
-                        <div class="contact-img">
-                            <img src="/assets/desenvolvedor.png" alt="Imagem de um desenvolvedor">
-                        </div>
                         <div class="contact-content">
-                            <span>Sobre mim</span>
-                            <div class="contact-title">
-                                <h3>Titulo do sobre mim</h3>
+                            <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+                                <label>Nome</label>
+                                <input class="form-field" type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required="">
+                                <label>Email</label>
+                                <input class="form-field" type="email" name="email" placeholder="Digite seu email" autocomplete="off" required="">
+                                <label>Mensagem</label>
+                                <textarea class="form-field" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required=""></textarea>
+                                <button class="form-submit" type="submit">Enviar</button>
+
+                                <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+                                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+                            </form>   
+                        </div>
+                        <div class="contact-title">
+                            <h2>Contato</h2> 
+                            <div class="contact-thanks hidden-message">
+                                <h2>Obrigado pelo contato!</h2>
+                                <span>Estarei retornando em breve :)</span>                            
                             </div>
-                            <span>Front-end developer</span>
-                            <div class="contact-description">
-                                <p>texto texto texto texto texto texto texto textotexto texto texto textotexto texto texto textotexto texto texto texto.</p>
-                            </div>
-                            <div class="contact-button btnContato">
-                                <button>Contato</button>
-                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
             <section></section>
         </main>
@@ -139,6 +149,9 @@
                         <li>
                             <a href="#experience-target">Experiência</a>
                         </li>
+                        <li>
+                            <a href="#projects-target">Projetos</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="content-footer footer-contact">
@@ -159,16 +172,17 @@
                 <div class="content-footer footer-social">                    
                     <ul>
                         <li>
-                            <a href="https://github.com/Vitorrocha98" target="_blank" title="Github">
-                                <img src="assets/icon-github.png" alt="Imagem do icone do Github"></a>
-                        </li>
-                        <li>
                             <a href="https://www.linkedin.com/in/vitor-ferreira-rocha" target="_blank" title="LinkedIn">
                                 <img src="assets/icon-linkedin.png" alt="Imagem do icone do LinkedIn"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Vitorrocha98" target="_blank" title="Github">
+                                <img src="assets/icon-github.png" alt="Imagem do icone do Github"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </footer>
+        <script src="app.js"></script>
       </body>
 </html>
