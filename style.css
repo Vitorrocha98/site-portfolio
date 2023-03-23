@@ -137,7 +137,7 @@ body {
 
 .about,.experience,.projects,.contact {
     width: 100%;
-    height: 30rem;
+    /* height: 30rem; */
     padding: 3rem 6rem;
 }
 
@@ -221,17 +221,41 @@ h2 {
     border-bottom: 3px solid #09BBC3;
 }
 
+.projects-conteiner {flex-direction: column;}
+
+.projects-carousel {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.projects-carousel a {
+    text-decoration: none;
+}
+
+.iten-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iten-carousel img {width: 60%;border-radius: 7px;}
+
+.iten-carousel span {padding: 20px 0;text-transform: uppercase;}
+
 #contact-form{
-    height: 25rem;
+    background: rgba(26, 29, 34, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(26, 29, 34, 0.3);
     display: flex;
     flex-direction: column;
     padding: 8%;
-    background: rgba(0, 0, 0, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    z-index: 10;
 }
 
 #contact-form label {
@@ -261,6 +285,7 @@ h2 {
 .form-submit {
     width: 50%;
     margin: 0 auto;
+    padding: 0.9rem 0.6rem;
 }
 
 .contact-title h2 {
@@ -380,6 +405,18 @@ footer .logo img{
 .footer-social ul {display: flex;}
 
 .footer-social img {width: auto; margin-right: 20px;}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-10px)
+	}
+}
+.infinite-floating-effect {
+     animation: float 3.5s ease-in-out infinite;
+}
 
 @media all and (max-width: 1036px) {
     #nav-menu, .btnContato{display:none;}
