@@ -102,7 +102,7 @@ body {
 
 .banner-container img {
     width: -webkit-fill-available;
-    filter: brightness(0.3);
+    filter: brightness(0.5);
 }
 
 .banner {
@@ -132,7 +132,7 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(26, 29, 34, 0.3);
-    display: none;
+    /* display: flex; */
     flex-direction: column;
     padding: 6%;
     z-index: 10;
