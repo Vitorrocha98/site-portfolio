@@ -473,6 +473,8 @@ footer .logo img{
 }
 
 @media all and (max-width: 1036px) {
+    main {display: none;}
+
     #nav-menu, .btnContato{display:none;}
 
     .banner .apresentacao {
