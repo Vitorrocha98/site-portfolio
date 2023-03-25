@@ -23,6 +23,7 @@ if("IntersectionObserver" in window) {
                 else if(item.id == "experience-target"){
                     //console.log("VISUALIZOU EXPERIENCIA")
                     document.querySelector('#banner-principal .titulo-apresentacao').classList.remove('active-banner');
+                    document.querySelector('#banner-principal .titulo-apresentacao').style.display = 'none'
                 }
             }
         })
