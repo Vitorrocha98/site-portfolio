@@ -19,11 +19,13 @@ if("IntersectionObserver" in window) {
                 if(item.id == "banner-principal"){
                     //console.log("======== VISUALIZOU BANNER ========")
                     document.querySelector('#banner-principal .titulo-apresentacao').classList.add('active-banner');
+                    document.querySelector(".top-button").classList.remove('active-top-button');
                 }
                 else if(item.id == "experience-target"){
                     //console.log("VISUALIZOU EXPERIENCIA")
                     document.querySelector('#banner-principal .titulo-apresentacao').classList.remove('active-banner');
                     document.querySelector('#banner-principal .titulo-apresentacao').style.display = 'none'
+                    document.querySelector(".top-button").classList.add('active-top-button')
                 }
             }
         })

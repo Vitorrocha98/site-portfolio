@@ -180,14 +180,67 @@ body {
 
 .titulo-apresentacao b {font-weight: 100;}
 
-[alt="Imagem do desktop e mobile"] {
-    height: 40rem;
-}
+[alt="Imagem do desktop e mobile"] {height: 40rem;}
 
 .img-apresentacao img {
     width: 23rem;
     filter: none;
 }
+
+.top-button {
+    display: none;
+    position: fixed;
+    right: 40px;
+    z-index: 99;
+    top: 85%;
+    background-color: #09BBC3;
+    border-radius: 5px;
+    /* -webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+}
+
+.top-button a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 24px 3px;
+    align-items: center;
+}
+
+.active-top-button {display: block;}
+
+@-webkit-keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
 
 .about,.experience,.projects,.contact {
     width: 100%;
@@ -214,10 +267,7 @@ body {
     border-right: 1px solid #1a1d22;
 }
 
-.about-img img,.experience-img img {
-    width: 65%;
-    /* border: 3px solid #09BBC3; */
-}
+.about-img img,.experience-img img {width: 65%;/* border: 3px solid #09BBC3; */}
 
 .about-content,.contact-title {
     display: flex;
@@ -232,9 +282,7 @@ body {
     color: #09BBC3;
 }*/
 
-span {
-    color: #09BBC3;
-}
+span {color: #09BBC3;}
 
 /* .about-title h3 {
     color: #fff;
@@ -250,11 +298,26 @@ h2 {
 
 .about-description {
     color: #fff;
-    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.about-button.btnContato {
-    padding: 20px 0;
+.about-title {border-bottom: 1px solid #09BBC3;}
+
+.about-button.btnContato {padding: 20px 0;}
+
+.about-button a {
+    color: #09BBC3;
+    border: 2px solid #09BBC3;
+    background-color: #1A1D22;
+    font-size: 12px;
+}
+
+.about-button a:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #1A1D22;
 }
 
 /* .about-button.btnContato a{
@@ -263,9 +326,7 @@ h2 {
     text-decoration: none;
 } */
 
-.experience, .contact {
-    background-color: #111111;
-}
+.experience, .contact {background-color: #111111;}
 
 .title {    
     display: flex;
@@ -312,9 +373,7 @@ h2 {
     z-index: 10;
 }
 
-#contact-form label {
-    color: #fff;
-}
+#contact-form label {color: #fff;}
 
 #contact-form input, #contact-form textarea {
     border-radius: 5px;
@@ -353,9 +412,7 @@ h2 {
     padding: 0;
 }
 
-.contact-thanks span {
-    color: #fff;
-}
+.contact-thanks span {color: #fff;}
 
 .active-message {
 	-webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -429,13 +486,9 @@ footer {
     border-left: 2px solid #1a1d22;
 }
 
-footer .logo {
-    padding: 0;
-}
+footer .logo {padding: 0;}
 
-footer .logo img{
-    width: 7rem;
-}
+footer .logo img {width: 7rem;}
 
 .content-footer ul {list-style: none;padding-left: 0;}
 
@@ -445,9 +498,7 @@ footer .logo img{
     color: #9fa6ad;
     text-decoration: none;    
 }
-.content-footer a:hover {
-    color: #fff;    
-}
+.content-footer a:hover {color: #fff;}
 
 .content-footer h3 {margin: 0;font-weight: 500;}
 
