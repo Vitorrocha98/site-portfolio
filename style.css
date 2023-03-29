@@ -100,7 +100,7 @@ body {
     background-color: #b8eff1;
 }
 
-.banner-container img {
+.banner-container [alt="Imagem do universo"] {
     width: -webkit-fill-available;
     filter: brightness(0.5);
 }
@@ -120,6 +120,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.banner .apresentacao ul {
+    margin: 0;
+    position: absolute;
+    top: 15.7rem;
+}
+
+.banner .apresentacao li {padding-right: 15px;}
+
+.banner .apresentacao li img {width: 26px;}
 
 .banner .titulo-apresentacao {
     color: #fff;
@@ -267,7 +277,7 @@ body {
     border-right: 1px solid #1a1d22;
 }
 
-.about-img img,.experience-img img {width: 65%;/* border: 3px solid #09BBC3; */}
+.about-img img {width: 60%;}
 
 .about-content,.contact-title {
     display: flex;
@@ -490,7 +500,7 @@ footer .logo {padding: 0;}
 
 footer .logo img {width: 7rem;}
 
-.content-footer ul {list-style: none;padding-left: 0;}
+.content-footer ul, .apresentacao ul {list-style: none;padding-left: 0;}
 
 .content-footer li {margin-bottom: 3px;}
 
@@ -507,7 +517,7 @@ footer .logo img {width: 7rem;}
     margin-right: 5px;  
 }
 
-.footer-social ul {display: flex;}
+.footer-social ul, .apresentacao ul {display: flex;}
 
 .footer-social img {width: auto; margin-right: 20px;}
 
