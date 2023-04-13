@@ -265,6 +265,8 @@ body {
     align-items: center;
 }
 
+.experience-conteiner {flex-direction: column;}
+
 .about-img, .contact-content {
     padding-right: 2rem;
     width: 50%;
@@ -345,6 +347,30 @@ h2 {
     align-items: center;
     border-bottom: 3px solid #09BBC3;
 }
+
+.experience {padding: 3rem 4rem;}
+
+.service-icons {
+    display: flex;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-card {
+    background-color:#333;
+    font-size: 15px;
+    color: #fff;
+    width: 20rem;
+    padding: 15px;
+    margin: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.icon-card h3 {text-transform: capitalize;}
 
 .projects-conteiner {flex-direction: column;}
 
