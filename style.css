@@ -450,6 +450,13 @@ h2 {
 
 .contact-thanks span {color: #fff;}
 
+.contact-rocket {
+    width: 40%;
+    position: absolute;
+    right: 10px;
+    margin-top: 310px;
+}
+
 .active-message {
 	-webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -560,9 +567,9 @@ footer .logo img {width: 7rem;}
 }
 
 @media all and (max-width: 1036px) {
-    main {display: none;}
+    /*main {display: none;}*/
 
-    #nav-menu, .btnContato{display:none;}
+    #nav-menu, .btnContato, .projects-carousel, .about, .apresentacao{display:none !important;}
 
     .banner .apresentacao {
         flex-direction: column-reverse;
@@ -576,6 +583,42 @@ footer .logo img {width: 7rem;}
     .img-apresentacao img {
         width: 10rem;
     }
+
+    .icon-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .icon-card-img {
+        width: 40px;
+        margin: 0 15px 0 10px;
+    }
+
+    .icon-card-text {
+        display: none;
+    }
+    
+    .contact-conteiner {flex-direction: column-reverse;}
+
+    .contact-content {
+        width: auto;
+        padding: 0;
+        border: none;
+    }
+
+    #contact-form {
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .contact-title {
+        padding: 0;
+        width: auto;
+    }
+
+    .contact-rocket {display: none;}
 
     .footer-container {
         flex-direction: column;
