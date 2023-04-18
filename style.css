@@ -566,10 +566,29 @@ footer .logo img {width: 7rem;}
      animation: float 3.5s ease-in-out infinite;
 }
 
+/*======= STYLE MOBILE =======*/
 @media all and (max-width: 1036px) {
     /*main {display: none;}*/
 
-    #nav-menu, .btnContato, .projects-carousel, .about, .apresentacao{display:none !important;}
+    #nav-menu, .btnContato, .projects-carousel, .apresentacao{display:none !important;}
+
+    .about, .experience, .contact {padding: 2.5rem;}
+    
+    .about-conteiner {flex-direction: column-reverse;}
+
+    .about-img {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-img img {width: 300px;}
+
+    .about-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .about-description {font-size: 16px;}
 
     .banner .apresentacao {
         flex-direction: column-reverse;
