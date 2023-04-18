@@ -100,9 +100,13 @@ body {
     background-color: #b8eff1;
 }
 
-.banner-container [alt="Imagem do universo"] {
+.img-banner {
     width: -webkit-fill-available;
     filter: brightness(0.5);
+}
+
+.img-banner-mobile {
+    display: none;
 }
 
 .banner {
@@ -573,7 +577,40 @@ footer .logo img {width: 7rem;}
     #nav-menu, .btnContato, .projects-carousel, .apresentacao{display:none !important;}
 
     .about, .experience, .contact {padding: 2.5rem;}
+
+    .img-banner {
+        display: none;
+    }
     
+    .img-banner-mobile {
+        width: -webkit-fill-available;
+        filter: brightness(0.5);
+        display: block;
+    }
+
+    #banner-principal {
+        height: auto;
+        padding-top: 30%;
+    }
+
+    #banner-principal .apresentacao {
+        display: flex!important;
+        margin: 0 40px;
+    }
+    
+    .banner .titulo-apresentacao {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .titulo-apresentacao span {margin: 70px 0 35px 0;}
+
+    .banner .apresentacao ul {
+        position: inherit;
+        margin: 60px 0 35px 0;
+    }
+
     .about-conteiner {flex-direction: column-reverse;}
 
     .about-img {
