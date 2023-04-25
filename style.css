@@ -594,11 +594,14 @@ footer .logo img {width: 7rem;}
     .header-container {
         background-color: #1a1d22;
         position: fixed;
+        -webkit-box-shadow: 0px 2px 10px 0px #000000; 
+        box-shadow: 0px 2px 10px 0px #000000;
     }
 
     .nav-list {
         position: fixed;
-        top: 8vh;
+        z-index: -1;
+        top: 0;
         right: 0;
         width: 50vw;
         height: 100vh;
@@ -621,7 +624,9 @@ footer .logo img {width: 7rem;}
     }
 
     .nav-list.active {
-        transform: translateX(0)
+        transform: translateX(0);
+        -webkit-box-shadow: 4px 2px 15px 3px #000000; 
+        box-shadow: 4px 2px 15px 3px #000000;
     }
 
     @keyframes navLinkFade {
