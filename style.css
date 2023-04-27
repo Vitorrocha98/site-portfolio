@@ -657,7 +657,7 @@ footer .logo img {width: 7rem;}
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
-    .close-menu {
+    .close-menu-mobile {
         /*background: red;*/
         height: 100vh;
         position: absolute;
@@ -668,7 +668,7 @@ footer .logo img {width: 7rem;}
         display: none;
     }
 
-    .close-menu.active {display: block;}
+    .close-menu-mobile.active {display: block;}
 
     .img-banner {
         display: none;
