@@ -366,9 +366,10 @@ h2 {
 .experience {padding: 3rem 4rem;}
 
 .service-icons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
     margin-top: 3rem;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -731,6 +732,8 @@ footer .logo img {width: 7rem;}
     .img-apresentacao img {
         width: 10rem;
     }
+
+    .service-icons {grid-template-columns: repeat(1, 1fr);}
 
     .icon-card {
         display: flex;
