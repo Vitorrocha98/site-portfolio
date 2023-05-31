@@ -39,4 +39,9 @@ if("IntersectionObserver" in window) {
     itensObservados.forEach(item => observer.observe(item));
 }
 
-//=========================================
+//========================================= Botão de fechar o contact-modal
+
+const btnFecharModal = document.querySelector('.contact-modal__close');
+btnFecharModal.onclick = function(){
+    document.querySelector('.contact-modal').style.display = 'none';
+}

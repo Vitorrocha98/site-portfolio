@@ -1,0 +1,86 @@
+.contact-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 130px 24px 24px;
+    z-index: 99;
+}
+
+.contact-modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, .95);
+    border-radius: 4px;
+    padding: 32px 16px;
+}
+
+.contact-modal__body {
+    text-align: center;
+}
+
+.contact-modal__close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.contact-modal__close img {
+    max-width: 24px;
+}
+
+.contact-modal__title {
+    font-size: 2rem;
+    color: #1A1D22;
+}
+
+.contact-modal__title, .contact-modal__description {
+    margin: 0;
+}
+
+.contact-modal__description {
+    font-size: 1.6rem;
+    color: #3C4043;
+    line-height: 150%;
+    padding-block: 32px 16px;
+}
+
+.contact-modal__footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: none;
+}
+
+.contact-modal__link {
+    width: 100%;
+    padding: 16px;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #1A1D22;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.contact-modal__link.btn-blue {
+    background: #09BBC3;
+}
+
+.contact-modal__link.btn-gray {
+    border: 2px solid #1A1D22;
+}
+
+@media (min-width: 600px){
+    .contact-modal {
+        display: none;
+    }
+}

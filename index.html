@@ -7,7 +7,8 @@
         <meta name="description" content="Este site é um exemplo de estudo sobre HTML e CSS.">
         <link rel="shortcut icon" href="assets/logo-vr-azul.ico" type="image/x-icon">
         <title>Portfólio - Vitor Rocha</title>
-        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="contact-modal.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script async src="app.js"></script>
@@ -266,7 +267,22 @@
                     </ul>
                 </div>
             </div>
-        </footer>        
+        </footer>    
+        <div class="contact-modal">
+            <div class="contact-modal__content">
+                <button class="contact-modal__close">
+                    <img src="assets/close-modal.png" alt="Fechar modal" />
+                </button>
+                <div class="contact-modal__body">
+                    <h2 class="contact-modal__title">Gostaria de entrar em contato?</h2>
+                    <p class="contact-modal__description">Me envie um e-mail a partir do botão abaixo e estarei respondendo o mais rápido possíveil.</p>
+                </div>
+                <footer class="contact-modal__footer">
+                    <a class="contact-modal__link btn-blue" href="mailto:vitorfrocha98@gmail.com">Enviar um e-mail</a>
+                    <a class="contact-modal__link btn-gray" data-email="vitorfrocha98@gmail.com">Copiar o e-mail</a>
+                </footer>
+            </div>
+        </div>    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="slick-slider.js"></script>
