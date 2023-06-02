@@ -19,7 +19,7 @@
     max-width: 400px;
     background: rgba(255, 255, 255, .95);
     border-radius: 4px;
-    padding: 32px 16px;
+    padding: 32px 24px;
 }
 
 .contact-modal__body {
@@ -28,8 +28,11 @@
 
 .contact-modal__close {
     position: absolute;
-    right: 4px;
-    top: 4px;
+    right: 8px;
+    top: 8px;
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 .contact-modal__close img {
@@ -37,7 +40,7 @@
 }
 
 .contact-modal__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #1A1D22;
 }
 
@@ -46,29 +49,28 @@
 }
 
 .contact-modal__description {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #3C4043;
     line-height: 150%;
-    padding-block: 32px 16px;
+    padding-block: 8px 8px;
 }
 
 .contact-modal__footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
     border-top: none;
 }
 
 .contact-modal__link {
-    width: 100%;
     padding: 16px;
     border-radius: 24px;
+    font-size: 1rem;
     text-decoration: none;
     text-align: center;
     color: #1A1D22;
     text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 16px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .contact-modal__link.btn-blue {
@@ -81,6 +83,65 @@
 
 @media (min-width: 600px){
     .contact-modal {
-        display: none;
+		align-items: flex-end;
+		justify-content: flex-start;
+		background: none;
+		backdrop-filter: none;
+        pointer-events: none;
+    }
+	
+	.contact-modal__content {
+		padding: 32px;
+        pointer-events: all;
+	}
+
+    .contact-modal__close img {
+        cursor: pointer;
+    }
+	
+	.contact-modal__body {
+		text-align: left;
+	}
+	
+	.contact-modal__title {
+		font-size: 1.5rem;
+	}
+	
+	.contact-modal__description {
+		font-size: 1rem;
+		padding-block: 16px 16px;
+	}
+	
+	.contact-modal__footer {
+		flex-direction: row;
+        flex-wrap: wrap;
+		gap: 16px;
+	}
+	
+	.contact-modal__link {
+		font-size: .8rem;
+		margin-top: 0;
+		padding: 12px 16px;
+	}
+	
+	.contact-modal__link.btn-blue {
+		border: 2px solid #09BBC3;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+	}
+
+    .contact-modal__link.btn-blue:hover {
+        background-color: #b8eff1;
+		border: 2px solid #b8eff1;
+	}
+
+    .contact-modal__link.btn-gray {
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+    
+    .contact-modal__link.btn-gray:hover {
+        background: #1A1D22;
+        color: #fff;
     }
 }
