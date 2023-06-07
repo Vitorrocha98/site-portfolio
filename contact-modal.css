@@ -6,11 +6,17 @@
     left: 0;
     background: rgba(0, 0, 0, .25);
     backdrop-filter: blur(3px);
-    display: flex;
+    display: none;
     align-items: flex-start;
     justify-content: center;
     padding: 130px 24px 24px;
     z-index: 99;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.contact-modal.show {
+    display: flex;
 }
 
 .contact-modal__content {
@@ -90,6 +96,11 @@
 		background: none;
 		backdrop-filter: none;
         pointer-events: none;
+        transform: translateY(0);
+    }
+
+    .contact-modal.show {
+        transform: translateY(-40px);
     }
 	
 	.contact-modal__content {

@@ -39,11 +39,22 @@ if("IntersectionObserver" in window) {
     itensObservados.forEach(item => observer.observe(item));
 }
 
-//========================================= Adiciona a classe show para mostrar o contact-modal
+//========================================= Adiciona a classe show para mostrar o contact-modal após 3 seg 
+window.setTimeout(contactModalShow, 3000)
 
-const contactModal = document.querySelector('.contact-modal');
-contactModal.classList.add('show');
+function contactModalShow(){
+    const contactModal = document.querySelector('.contact-modal');
+    contactModal.classList.add('show');    
+}
 
+//========================================= Funcionalidade do botão de copiar do contact-modal
+/*
+let btnCopy = document.querySelector('#btnCopy');
+
+btnCopy.addEventListener('click', function(e) {
+    
+});
+*/
 //========================================= Ação de fechar o contact-modal
 
 const btnFecharModal = document.querySelector('.contact-modal__close');
